@@ -8,16 +8,21 @@ angular.module('cart' , ['ngRoute'])
 }])
 
 .controller('cartCtrl' , ['$scope' , '$http' , 'CommonProp' , function($scope, $http , CommonProp) {
-    $http.get('public/list.json').then(function(response) {
-        $scope.shopitems = response.data
-    });
+    
+    $scope.shopitems = CommonProp.getItems();
+    if (!$scope.shopitems) {
+        $http.get('public/list.json').then(function(response) {
+            $scope.shopitems = response.data
+        });
+    }
 
     $scope.total = function() {
         var t = 0;
         for (var k in $scope.shopitems) {
             t += parseInt($scope.shopitems[k].selected);
         }
-        return t;
+        CommonProp.setTotal(t)
+        return CommonProp.getTotal();
     }
 
     $scope.$watch('shopitems' , function() {
@@ -43,7 +48,7 @@ angular.module('cart' , ['ngRoute'])
     }
 })
 
-.service('commonProp' , function() {
+.service('CommonProp' , function() {
     var items = ''
     var Total = 0
 

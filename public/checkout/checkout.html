@@ -11,17 +11,13 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Item 1</td>
-                    <td>Rs. 2000</td>
+                <tr ng-repeat="i in selectedItems" ng-if="i.selected != 0">
+                    <td>{{ i.item }}</td>
+                    <td>Rs. {{ i.selected }}</td>
                 </tr>
                 <tr>
-                    <td>Item 2</td>
-                    <td>Rs. 2000</td>
-                </tr>
-                <tr>
-                    <td>Item 3</td>
-                    <td>Rs. 2000</td>
+                    <td><strong>Total: </strong></td>
+                    <td><strong>{{ checkoutTotal }}</strong></td>
                 </tr>
             </tbody>
         </table>

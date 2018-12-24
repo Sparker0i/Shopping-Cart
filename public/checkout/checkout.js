@@ -7,6 +7,7 @@ angular.module('checkout' , ['ngRoute'])
     })
 }])
 
-.controller('checkoutCtrl' , ['$scope' , function($scope) {
-    
+.controller('checkoutCtrl' , ['$scope' , 'CommonProp' , function($scope , CommonProp) {
+    $scope.selectedItems = CommonProp.getItems()
+    $scope.checkoutTotal = CommonProp.getTotal()
 }])
