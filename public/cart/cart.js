@@ -11,7 +11,7 @@ angular.module('cart' , ['ngRoute'])
     
     $scope.shopitems = CommonProp.getItems();
     if (!$scope.shopitems) {
-        $http.get('public/list.json').then(function(response) {
+        $http.get('public/products.json').then(function(response) {
             $scope.shopitems = response.data
         });
     }
@@ -39,11 +39,10 @@ angular.module('cart' , ['ngRoute'])
             selected : '='
         },
         template: function(elem , attr) {
-            return '<div class="panel-body">\
-            <div class="radio" ng-repeat="i in option">\
+            return '<div class="radio" ng-repeat="i in option">\
                 <label><input type="radio" name="{{ name }}" ng-value="{{ i.price }}" \
-                ng-model="$parent.selected">{{ i.size }}, {{ i.price }}</label>\
-            </div></div>'
+                ng-model="$parent.selected">{{ i.size }}, Rs. {{ i.price }}</label>\
+            </div>'
         }
     }
 })

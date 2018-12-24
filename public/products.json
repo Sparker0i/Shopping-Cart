@@ -1,0 +1,119 @@
+[
+	{
+	  "id": 0,
+	  "item": "Moto G3",
+	  "selected": 0,
+	  "prices": [
+		{
+		  "size": "5\"",
+		  "price": 13999
+		}
+	  ],
+	  "arrival": "2015-06-29",
+	  "cover": "public/img/Moto G3.jpg"
+	},
+	{
+	  "id": 1,
+	  "item": "Lumia 640XL",
+	  "selected": 0,
+	  "prices": [
+		{
+		  "size": "5.5\"",
+		  "price": 16999
+		}
+	  ],
+	  "arrival": "2015-09-06",
+	  "cover": "public/img/Lumia 640XL.jpg"
+	},
+	{
+	  "id": 2,
+	  "item": "Moto X Style",
+	  "selected": 0,
+	  "prices": [
+		{
+		  "size": "5.5\"",
+		  "price": 21999
+		}
+	  ],
+	  "arrival": "2015-06-28",
+	  "cover": "public/img/Moto X Style.jpg"
+	},
+	{
+	  "id": 3,
+	  "item": "Nexus 5X",
+	  "selected": 0,
+	  "prices": [
+		{
+		  "size": "5.2\"",
+		  "price": 33999
+		}
+	  ],
+	  "arrival": "2015-08-29",
+	  "cover": "public/img/Nexus-5X.jpg"
+	},
+	{
+	  "id": 4,
+	  "item": "Yu Yunicorn",
+	  "selected": 0,
+	  "prices": [
+		{
+		  "size": "5\"",
+		  "price": 6999
+		}
+	  ],
+	  "arrival": "2016-06-07",
+	  "cover": "public/img/Yu Yunicorn.jpg"
+	},
+	{
+	  "id": 5,
+	  "item": "iPhone 6S",
+	  "selected": 0,
+	  "prices": [
+		{
+		  "size": "5.2\"",
+		  "price": 79999
+		}
+	  ],
+	  "arrival": "2015-09-13",
+	  "cover": "public/img/iPhone6S.jpg"
+	},
+	{
+	  "id": 6,
+	  "item": "Zenfone 2",
+	  "selected": 0,
+	  "prices": [
+		{
+		  "size": "5.5\"",
+		  "price": 22999
+		}
+	  ],
+	  "arrival": "2015-04-01",
+	  "cover": "public/img/Zenfone 2.jpg"
+	},
+	{
+	  "id": 7,
+	  "item": "Redmi Note 3",
+	  "selected": 0,
+	  "prices": [
+		{
+		  "size": "5.5\"",
+		  "price": 11999
+		}
+	  ],
+	  "arrival": "2016-01-11",
+	  "cover": "public/img/Redmi Note 3.jpg"
+	},
+	{
+	  "id": 8,
+	  "item": "LeEco Le2",
+	  "selected": 0,
+	  "prices": [
+		{
+		  "size": "5.5\"",
+		  "price": 15999
+		}
+	  ],
+	  "arrival": "2016-02-10",
+	  "cover": "public/img/LeEco Le2.jpg"
+	}
+  ]
