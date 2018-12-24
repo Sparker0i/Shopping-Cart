@@ -7,9 +7,21 @@ angular.module('cart' , ['ngRoute'])
     })
 }])
 
-.controller('cartCtrl' , ['$scope' , '$http' , function($scope, $http) {
+.controller('cartCtrl' , ['$scope' , '$http' , 'CommonProp' , function($scope, $http , CommonProp) {
     $http.get('public/list.json').then(function(response) {
         $scope.shopitems = response.data
+    });
+
+    $scope.total = function() {
+        var t = 0;
+        for (var k in $scope.shopitems) {
+            t += parseInt($scope.shopitems[k].selected);
+        }
+        return t;
+    }
+
+    $scope.$watch('shopitems' , function() {
+        CommonProp.setItems($scope.shopitems)
     })
 }])
 
@@ -18,13 +30,35 @@ angular.module('cart' , ['ngRoute'])
         restrict: 'E',
         scope: {
             option : '=',
-            name : '='
+            name : '=',
+            selected : '='
         },
         template: function(elem , attr) {
             return '<div class="panel-body">\
             <div class="radio" ng-repeat="i in option">\
-                <label><input type="radio" name="{{ name }}">{{ i.size }}, {{ i.price }}</label>\
+                <label><input type="radio" name="{{ name }}" ng-value="{{ i.price }}" \
+                ng-model="$parent.selected">{{ i.size }}, {{ i.price }}</label>\
             </div></div>'
+        }
+    }
+})
+
+.service('commonProp' , function() {
+    var items = ''
+    var Total = 0
+
+    return {
+        getItems: function() {
+            return items;
+        },
+        setItems: function(value) {
+            items = value;
+        },
+        getTotal: function() {
+            return Total;
+        },
+        setTotal: function(value) {
+            Total = value;
         }
     }
 })
