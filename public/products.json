@@ -5,7 +5,7 @@
 	  "selected": 0,
 	  "prices": [
 		{
-		  "size": "5\"",
+		  "size": "2GB RAM/16GB Storage",
 		  "price": 13999
 		}
 	  ],
@@ -18,7 +18,7 @@
 	  "selected": 0,
 	  "prices": [
 		{
-		  "size": "5.5\"",
+		  "size": "1GB RAM/8GB Storage",
 		  "price": 16999
 		}
 	  ],
@@ -30,10 +30,18 @@
 	  "item": "Moto X Style",
 	  "selected": 0,
 	  "prices": [
-		{
-		  "size": "5.5\"",
-		  "price": 21999
-		}
+			{
+				"size": "3GB RAM/16GB Storage",
+				"price": 21999
+			},
+			{
+				"size": "3GB RAM/32GB Storage",
+				"price": 23999
+			},
+			{
+				"size": "3GB RAM/64GB Storage",
+				"price": 25999
+			}
 	  ],
 	  "arrival": "2015-06-28",
 	  "cover": "public/img/Moto X Style.jpg"
@@ -43,10 +51,14 @@
 	  "item": "Nexus 5X",
 	  "selected": 0,
 	  "prices": [
-		{
-		  "size": "5.2\"",
-		  "price": 33999
-		}
+			{
+				"size": "2GB RAM/16GB Storage",
+				"price": 33999
+			},
+			{
+				"size": "2GB RAM/32GB Storage",
+				"price": 37999
+			}
 	  ],
 	  "arrival": "2015-08-29",
 	  "cover": "public/img/Nexus-5X.jpg"
@@ -57,7 +69,7 @@
 	  "selected": 0,
 	  "prices": [
 		{
-		  "size": "5\"",
+		  "size": "4GB RAM/32GB Storage",
 		  "price": 6999
 		}
 	  ],
@@ -70,8 +82,16 @@
 	  "selected": 0,
 	  "prices": [
 		{
-		  "size": "5.2\"",
+		  "size": "2GB RAM/16GB Storage",
 		  "price": 79999
+		},
+		{
+		  "size": "2GB RAM/32GB Storage",
+		  "price": 89999
+		},
+		{
+		  "size": "2GB RAM/64GB Storage",
+		  "price": 99999
 		}
 	  ],
 	  "arrival": "2015-09-13",
@@ -83,8 +103,16 @@
 	  "selected": 0,
 	  "prices": [
 		{
-		  "size": "5.5\"",
-		  "price": 22999
+		  "size": "2GB RAM/16GB Storage",
+		  "price": 19999
+		},
+		{
+			"size": "2GB RAM/32GB Storage",
+			"price": 21999
+		},
+		{
+			"size": "4GB RAM/64GB Storage",
+			"price": 23999
 		}
 	  ],
 	  "arrival": "2015-04-01",
@@ -96,7 +124,11 @@
 	  "selected": 0,
 	  "prices": [
 		{
-		  "size": "5.5\"",
+			"size": "2GB RAM/16GB Storage",
+			"price": 9999
+		},
+		{
+		  "size": "3GB RAM/32GB Storage",
 		  "price": 11999
 		}
 	  ],
@@ -109,8 +141,12 @@
 	  "selected": 0,
 	  "prices": [
 		{
-		  "size": "5.5\"",
+		  "size": "3GB RAM/32GB Storage",
 		  "price": 15999
+		},
+		{
+			"size": "3GB RAM/64GB Storage",
+			"price": 18999
 		}
 	  ],
 	  "arrival": "2016-02-10",
