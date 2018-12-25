@@ -5,7 +5,7 @@
             <div class="thumbnail">
             <img ng-src="{{product.cover}}">
             <p class="title">{{product.item}} </p>
-            <p class="price">{{product.price | currency}} </p>
+            <p class="price">Rs. {{product.selected}} </p>
             <p class="date">Arrived : {{product.arrival | date}}</p>
             <check-list option="product.prices" name="product.id" selected="product.selected"></check-list>
             </div>
