@@ -10,8 +10,8 @@ angular.module('cart' , ['ngRoute'])
 .controller('cartCtrl' , ['$scope' , '$http' , 'CommonProp' , function($scope, $http , CommonProp) {
     
     $scope.shopitems = CommonProp.getItems();
-    if (!$scope.shopitems) {
-        $http.get('public/products.json').then(function(response) {
+    if (!$scope.shopitems) {        
+        $http.get('http://localhost:9999/phones').then(function(response) {
             $scope.shopitems = response.data
         });
     }
